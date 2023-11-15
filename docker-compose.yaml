@@ -7,7 +7,7 @@ services:
     container_name: bugzilla_web
     restart: always
     ports:
-     - 5900:80
+     - 4080:80
     depends_on:
      -  db
   db:

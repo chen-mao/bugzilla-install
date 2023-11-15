@@ -1,4 +1,4 @@
-# bugzilla-install
+# Bugzilla-install
 Install Bugzilla by docker
 
 ## bugzilla 镜像制作
