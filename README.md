@@ -59,3 +59,23 @@ $ docker exec -it bugzilla_web ./checkscript.pl
 ```
 
 2. Now, you should be able to access the Bugzilla at https://localhost:4080/bugzilla
+
+### FAQ
++Freqently ask questions
++
++**How should bugzilla service be restart when the server machine restarts?**
++Execute as shown below:
++```shell
++# Close the service
++$ docker-compose down
++
++# Restart bugzilla service
++$ docker-compose up -d
++
++# Enter the container
++$ docker exec -it bugzilla_web bash
++
++# Execute script
++$ ./checkscript.pl
++```
+
